@@ -1,0 +1,58 @@
+.cards__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 920px;
+  height: 420px;
+}
+.technique__img {
+  margin: 0 auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+.card {
+  width: 240px;
+  margin-right: 100px;
+  margin-top: 60px;
+}
+.card:last-child {
+  margin-right: 0;
+}
+.cards__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 43px;
+}
+.cards__description {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.cards_title {
+  text-align: center;
+}
+.techniques__section-subtitle {
+  margin-bottom: 0;
+}
+.overcards {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+.cards-item__sixth-card {
+  z-index: -1;
+}

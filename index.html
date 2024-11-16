@@ -3,31 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="pages/index.css" />
+    <link rel="stylesheet" href="vendor/normalize.css" />
     <title>Научиться учиться</title>
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <div class="right-side">
-          <img src="images/logo_place_header.svg" alt="Лого" class="logo" />
-          <h1 class="title">Научиться<br />учиться</h1>
-          <p class="subtitle">
+        <div class="header__right-side">
+          <img
+            src="images/logo_place_header.svg"
+            alt="Лого"
+            class="header__logo logo"
+          />
+          <h1 class="header__title">Научиться<br />учиться</h1>
+          <p class="header__subtitle">
             Какие современные и эффективные подходы к обучению вы можете
             использовать в своей жизни?
-            <a href="#" class="link">Узнать<span class="arrow">→</span></a>
+            <a href="#" class="header__link link"
+              >Узнать<span class="header-arrow arrow">→</span></a
+            >
           </p>
         </div>
         <img
           src="images/two_again.png"
           alt="Портрет парня с собакой"
-          class="two-again"
+          class="header__two-again"
         />
-        <div class="square-pic"></div>
+        <div class="header__square-pic"></div>
       </header>
-      <main class="content">
-        <section class="description">
+      <main class="main-content">
+        <section class="main-content__description">
           <div class="two-colums">
             <div class="two-colums__brief">Главные проблемы в обучении</div>
             <div class="two-colums__main-text">
@@ -52,9 +58,152 @@
           </div>
         </section>
 
-        <section class="digits">
-          <div class="section-title section-title_digits">Цифры и факты</div>
-          <div class="section-subtitle section-subtitle_white">
+        <section class="techniques">
+          <div class="techniques__section title section-title">
+            Техники обучения
+          </div>
+          <div class="techniques__section-subtitle section-subtitle">
+            Пять практик от Барбары Оакли
+          </div>
+          <div class="cards__item">
+            <div class="cards-item__first-card card">
+              <div class="cards__image">
+                <img
+                  src="images/cards-attention.png"
+                  alt="Книга в руках"
+                  class="technique__img"
+                />
+              </div>
+              <div class="cards_title table__heading">Два вида внимания</div>
+              <div class="cards__description">
+                Глубокие знания возникают, если чередовать сфокусированное и
+                рассеянное мышление.
+              </div>
+            </div>
+
+            <div class="cards-item__second-card card">
+              <div class="cards__image">
+                <img
+                  src="images/cards-recall.png"
+                  alt="Статуэтка"
+                  class="technique__img"
+                />
+              </div>
+              <div class="cards_title table__heading">Recall</div>
+              <div class="cards__description">
+                Вспоминайте изученное — это позволит соединить разрозненные
+                порции памяти.
+              </div>
+            </div>
+
+            <div class="cards-item__third-card card">
+              <div class="cards__image">
+                <img
+                  src="images/cards-interliving.png"
+                  alt="Большой зал"
+                  class="technique__img"
+                />
+              </div>
+              <div class="cards_title table__heading">Интерливинг</div>
+              <div class="cards__description">
+                Изучайте несколько навыков одновременно, они обогащают друг
+                друга.
+              </div>
+            </div>
+          </div>
+          <div class="overcards">
+            <div class="cards-item__fouth-card card">
+              <div class="cards__image">
+                <img
+                  src="images/cards-question.png"
+                  alt="Большая залла 2"
+                  class="technique__img"
+                />
+              </div>
+            </div>
+            <div class="cards-item__fifth-card card">
+              <div class="cards__image">
+                <img
+                  src="images/cards-competence.png"
+                  alt="Книги в руке"
+                  class="technique__img"
+                />
+              </div>
+            </div>
+            <div class="cards-item__sixth-card card">
+              <div class="cards__image"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="video">
+          <div class="video__section-title section-title">Видео нa TED</div>
+          <div class="video__section-subtitle section-subtitle">
+            Для тех, кто любит прокрастинировать
+          </div>
+          <div class="video__iframes">
+            <iframe
+              class="video__iframe"
+              video__iframe_a
+              width="515px"
+              height="316px"
+              src="https://youtu.be/arj7oStGLkU?si=zvb9AB_CkYtNONp6"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              class="video__iframe"
+              video__iframe_b
+              width="515px"
+              height="316px"
+              src="https://youtu.be/5MgBikgcWnY?si=y3_4m9leLhsMxjjd"
+            ></iframe>
+          </div>
+        </section>
+        <section class="oakley">
+          <div class="oakley__two-colums two-colums">
+            <div class="oakley__brief two-colums__brief">
+              История Барбары Оакли.
+            </div>
+            <div class="oakley__main-text two-colums__main-text">
+              С детства Барбаре не давалась математика. Она считала себя
+              законченным гуманитарием, причём далеко не самым умным. В армии
+              она изучала русский язык, чтобы получить надбавку, да так успешно,
+              что её выдвинули в командиры. Но для продвижения по службе нужно
+              было сдавать математику. И тогда Барбара придумала свой подход к
+              точным наукам. Оказалось, если вам что-то «плохо даётся», ваши
+              добытые трудом знания гораздо глубже, чем у тех, кому всё ясно с
+              первого взгляда.
+            </div>
+          </div>
+        </section>
+        <section class="feynman">
+          <img
+            src="images/feynman.png"
+            alt="Фото Феймана"
+            class="feynman__img"
+          />
+
+          <div class="feynman__title">
+            Метод<br />
+            Фейнмана
+          </div>
+          <div class="feynman__subtitle">Выучить и не забыть</div>
+
+          <div class="feynman__link">
+            <a href="#" class="link link_second"
+              >Подробнее<span class="feyman-arrow arrow">→</span></a
+            >
+          </div>
+        </section>
+
+        <section class="main-content__digits">
+          <div class="digits__section-title section-title section-title_digits">
+            Цифры и факты
+          </div>
+          <div
+            class="digits__section-subtitle section-subtitle section-subtitle_white"
+          >
             Про учебу и мозг
           </div>
           <div class="table table_first">
@@ -120,27 +269,31 @@
             </div>
           </div>
         </section>
-
-        <section class="feynman">
-          <img
-            src="images/feynman.png"
-            alt="Фото Феймана"
-            class="feynman__img"
-          />
-
-          <div class="feynman__title">
-            Метод<br />
-            Фейнмана
-          </div>
-          <div class="feynman__subtitle">Выучить и не забыть</div>
-
-          <div class="feynman__link">
-            <a href="#" class="link link_second"
-              >Подробнее<span class="arrow">→</span></a
-            >
+        <section class="khan">
+          <div class="khan__container">
+            <div class="khan__author">Салман Хан</div>
+            <div class="khan__title">Весь мир — школа</div>
+            <div class="khan__quote">
+              Страсть и новаторство Сала Хана меняют процесс обучения миллионов
+              студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать
+              всем, кто занимается образованием — так учащиеся повсюду смогут
+              получить навыки и знания, которые приносят успех в школе, карьере
+              и жизни.
+            </div>
+            <div class="khan__quote-author">Джордж Лукас</div>
+            <div class="khan__quote-author-subline">Кинорежиссер, продюсер</div>
+            <div class="khan__block-container">
+              <img
+                src="images/khan-book.jpg"
+                alt="Книга"
+                class="khan__book-pic"
+              />
+              <a href="#" class="khan__buy-link two-colums__brief">
+                Купить книгу<span class="khan-arrow arrow">→</span>
+              </a>
+            </div>
           </div>
         </section>
-
         <section class="kaufman">
           <div class="section-title section-title_theme_dark">
             Принципы обучения
@@ -216,6 +369,40 @@
             alt="Треугольник"
             class="kaufman__triangle"
           />
+        </section>
+        <section class="resources">
+          <div class="resources__section-title section-title">
+            Полезные ресурсы
+          </div>
+          <div class="resources__section-subtitle section-subtitle">
+            Больше материалов о техниках и лайфхаках обучения
+          </div>
+          <div class="resources__logo-zone">
+            <a href="#"
+              ><img
+                class="resources__link"
+                src="images/logo/resources-arzamas.svg"
+                alt="Armaza"
+            /></a>
+            <a href="#"
+              ><img
+                class="resources__link"
+                src="images/logo/resources-n1.svg"
+                alt="N+1"
+            /></a>
+            <a href="#"
+              ><img
+                class="resources__link"
+                src="images/logo/resources-strelka.svg"
+                alt="STRELKA"
+            /></a>
+            <a href="#"
+              ><img
+                class="resources__link"
+                src="images/logo/resources-polka.svg"
+                alt="ПОЛКА"
+            /></a>
+          </div>
         </section>
       </main>
       <footer class="footer">

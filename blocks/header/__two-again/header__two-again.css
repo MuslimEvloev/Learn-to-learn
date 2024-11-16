@@ -1,0 +1,9 @@
+.header__two-again {
+  position: absolute;
+  z-index: 2;
+  width: 765px;
+  height: 608px;
+  margin-top: 156px;
+  right: 0px;
+  bottom: 0;
+}
